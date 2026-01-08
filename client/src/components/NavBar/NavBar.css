@@ -12,20 +12,21 @@
 .navbar-menu ul {
   display: flex;
   list-style: none;
-  gap: 40px;
-  font-size: 18px;
+  gap: 55px;
+  font-size: 20px;
   cursor: pointer;
 }
 
 .navbar-right {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 
 .navbar-right button {
   padding: 8px 30px;
   border-radius: 50px;
-  font-size: 14px;
+  font-size: 18px;
   background: white;
   cursor: pointer;
   border: 1px solid tomato;
@@ -36,7 +37,27 @@
   color: white;
 }
 
-.navbar .active{
-  padding-bottom: 4px;
-  border-bottom: 4px solid tomato;
+.navbar .active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: tomato;
+  text-decoration-thickness: 4px;
+}
+
+.cart-bucket {
+  position: relative;
+}
+
+.cart-bucket .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  top: -8px;
+  right: -8px;
+  border-radius: 5px;
+}
+
+.navbar-right img{
+  width: 30px;
 }
